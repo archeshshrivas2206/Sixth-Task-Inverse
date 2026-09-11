@@ -1,0 +1,11 @@
+from mapping import product_offering_mapping,product_offering_category_mapping,product_offering_price_mapping, product_offering_characteristic_mapping, characteristic_master_mapping,category_master_mapping
+
+from display_labels import PRODUCT_DISPLAY_LABELS,PRICE_DISPLAY_LABELS,CHARACTERISTICS_DISPLAY_LABELS
+
+def invert_dict(d):
+    return {v:k for k , v in d.items()}
+
+product_payload_to_db=invert_dict(product_offering_mapping)
+price_payload_to_db=invert_dict(product_offering_price_mapping)
+chracteristics_payload_to_db=invert_dict(product_offering_category_mapping)
+custom_payload_to_db=invert_dict()
