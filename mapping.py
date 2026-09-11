@@ -1,0 +1,102 @@
+# mapping.py
+
+product_offering_mapping = {
+    "id": "identifier",
+    "type": "productType",
+    "description": "productInformation",
+    "is_bundle": "bundle",
+    "is_sellable": "sellable",
+    "version": "productVersion",
+    "external_identifier": "externalId",
+    "name": "productName",
+    "life_cycle_status": "lifeCycleState",
+    "status_reason": "statusDetail",
+    "place_ref": "placeReference",
+    "sla_ref": "slaReference",
+    "channel": "salesChannel",
+    "service_candidate_ref": "serviceCandidate",
+    "resource_candidate_ref": "resourceCandidate",
+    "product_offering_term_ref": "offeringTerm",
+    "agreement_ref": "agreementReference",
+    "market_segment_ref": "marketSegment",
+    "policy_ref": "policyReference",
+    "allowed_action_ref": "allowedAction",
+    "valid_start_datetime": "startDateTime",
+    "valid_end_datetime": "endDateTime",
+    "unit_type": "unitType",
+    "hsn_sac_code": "hsnSacCd",
+    "hsn_sac_code_id": "hsnSacCd",
+}
+
+product_offering_price_mapping = {
+    "id": "identifier",
+    "price_type": "type",
+    "name": "priceName",
+    "description": "information",
+    "version": "priceVersion",
+    "valid_start_datetime": "startDateTime",
+    "valid_end_datetime": "endDateTime",
+    "quantity_amount": "qtyAmount",
+    "quantity_unit": "qtyUnit",
+    "recurring_charge_period_type": "recurringPeriodType",
+    "recurring_charge_period_length": "recurringPeriodLength",
+    "is_bundle": "bundle",
+    "price_currency": "currency",
+    "price_currency_id": "currency",
+    "price_value": "value",
+    "percentage_alteration": "percentAlteration",
+    "product_offering_term_duration": "offeringTermDuration",
+    "place_ref": "placeReference",
+    "policy_ref": "policyReference",
+    "pricing_logic_algorithm_ref": "pricingLogicRef",
+    "external_identifier": "externalId",
+    "product_offering": "productOfferingIdentifier",
+    "product_offering_id": "productOfferingIdentifier",
+    "is_price_include_tax": "includeTax",
+    "price_without_tax": "priceWithoutTax",
+    "life_cycle_status": "lifeCycleState",
+    "tax_scheme_code": "taxSchemeCd",
+    "tax_scheme_code_id": "taxSchemeCd",
+}
+
+product_offering_category_mapping = {
+    "id": "identifier",
+    "is_active": "active",
+    "category_master": "categoryMasterIdentifier",
+    "category_master_id": "categoryMasterIdentifier",
+    "product_offering": "productOfferingIdentifier",
+    "product_offering_id": "productOfferingIdentifier",
+}
+
+product_offering_characteristic_mapping = {
+    "id": "identifier",
+    "product_offering": "productOfferingIdentifier",
+    "product_offering_id": "productOfferingIdentifier",
+    "characteristic_code": "characteristicCdIdentifier",
+    "characteristic_code_id": "characteristicCdIdentifier",
+    "is_active": "active",
+    "characteristic_value": "value",
+}
+
+characteristic_master_mapping = {
+    "characteristic_code": "characteristicCd",
+    "characteristic_name": "name",
+    "entity_type": "entityType",
+    "characteristic_type": "type",
+    "characteristic_value_type": "valueType",
+    "status": "status",
+    "include_in_invoice": "includeInInvoice",
+}
+
+category_master_mapping = {
+    "id": "identifier",
+    "name": "categoryName",
+    "version": "categoryVersion",
+    "description": "information",
+    "is_root": "root",
+    "parent_category_id": "parentCategoryIdentifier",
+    "life_cycle_status": "lifeCycleState",
+    "entity_type": "entityType",
+    "valid_start_datetime": "startDateTime",
+    "valid_end_datetime": "endDateTime",
+}
